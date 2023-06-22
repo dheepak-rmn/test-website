@@ -1,24 +1,27 @@
 <html>
   <head>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyDsQkpI0rMD9krMACpSo7hUn4Ar7jud6Nw",
-    authDomain: "fir-auth-dheepak-rmn.firebaseapp.com",
-    projectId: "fir-auth-dheepak-rmn",
-    storageBucket: "fir-auth-dheepak-rmn.appspot.com",
-    messagingSenderId: "655184856168",
-    appId: "1:655184856168:web:3c4224aa10cdc9660627dd"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script defer src="./init-firebase.js"></script>
+    
+<script>
+        function login(){
+        const auth = firebase.auth();
+        console.log("here");
+        const provider = new firebase.auth.GoogleAuthProvider();
+            auth.signInWithPopup(provider)
+        .then((result) => {
+            // Handle successful authentication
+            console.log(result);
+        })
+        .catch((error) => {
+            // Handle authentication error
+        });
+        }
 </script>
     </head>
-<body>Hi I am Dheepak on cloudflare</>
+<body>Hi I am Dheepak on cloudflare
+    <button onclick="login()"/>
+</body>
 </html>
