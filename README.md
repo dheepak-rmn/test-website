@@ -27,7 +27,7 @@ E.g.
  - Click on the app and go to the app settings
 ![image](https://github.com/dheepak-rmn/test-website/assets/135533984/6321f095-de7c-41ac-b150-a7feed0a578b)
 
- - Copy the firebase config from the setting and replace it with the `firebaseConfig` in `init-firebase.js`
+ - Copy the firebase config from the setting and replace it with the `firebaseConfig` in `init-firebase.js` Code link: https://github.com/dheepak-rmn/test-website/blob/a68d18178468d0238888da609f71e4c004f24cb2/init-firebase.js#L3
 ![image](https://github.com/dheepak-rmn/test-website/assets/135533984/5e896c1e-a004-40e0-9aa9-ce75107c3d8c)
 
 
